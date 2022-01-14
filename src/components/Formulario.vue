@@ -10,10 +10,11 @@
           class="input"
           type="text"
           placeholder="Qual tarefa você deseja iniciar?"
+          v-model="descricao"
         />
       </div>
       <div class="column">
-        <Temporizador />
+        <Temporizador @aoTemporizadorFinalizado="finalizarTarefa" />
       </div>
     </div>
   </div>
@@ -28,5 +29,15 @@ export default defineComponent({
   name: "Formulario",
 
   components: { Temporizador },
+
+  data: () => ({
+    descricao: "",
+  }),
+
+  methods: {
+    finalizarTarefa: function (tempoDecorrido: number): void {
+      console.log(tempoDecorrido);
+    },
+  },
 });
 </script>
