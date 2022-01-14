@@ -11,7 +11,7 @@ export default defineComponent({
   name: "Box",
   data: () => ({
     estilos: {
-      background: "#8257E5",
+      background: "#FF9000",
     },
   }),
 });

@@ -72,7 +72,7 @@ main {
 }
 
 main.modo-escuro {
-  --bg-primario: #121214;
+  --bg-primario: #312e38;
   --text-primario: #ddd;
 }
 

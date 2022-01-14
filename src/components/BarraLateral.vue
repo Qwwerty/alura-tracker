@@ -35,7 +35,7 @@ export default defineComponent({
 <style scoped>
 header {
   padding: 1rem;
-  background: #9871f5;
+  background: #312e38;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -53,7 +53,7 @@ header > img {
 button {
   width: 100%;
   padding: 2rem;
-  background: #04d361;
+  background: #ff9000;
 }
 
 @media only screen and (max-width: 768px) {
