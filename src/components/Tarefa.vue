@@ -2,7 +2,9 @@
   <Box>
     <div class="columns">
       <div class="column is-7">
-        {{ tarefa.descricao || "Tarefa sem descrição" }}
+        <span class="descricao-tarefa">{{
+          tarefa.descricao || "Tarefa sem descrição"
+        }}</span>
       </div>
       <div class="column">
         <Cronometro :tempoEmSegundos="tarefa.duracaoEmSegundos" />
@@ -29,3 +31,13 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.columns {
+  color: white !important;
+}
+
+.descricao-tarefa {
+  color: white;
+}
+</style>
