@@ -1,6 +1,23 @@
 <template>
   <header>
-    <img src="../assets/logo.png" alt="alura-tracker" />
+    <div>
+      <img src="../assets/logo.png" alt="alura-tracker" />
+
+      <nav class="panel mt-5">
+        <ul>
+          <li>
+            <router-link :to="{ name: 'Tarefas' }" class="link">
+              <i class="fas fa-tasks"> Tarefas </i>
+            </router-link>
+          </li>
+          <li>
+            <router-link :to="{ name: 'Projetos' }" class="link">
+              <i class="fas fa-project-diagram"> Projetos </i>
+            </router-link>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <button class="button" @click="alterarTema">{{ textoBotao }}</button>
   </header>
 </template>
@@ -54,6 +71,24 @@ button {
   width: 100%;
   padding: 2rem;
   background: #ff9000;
+}
+
+.panel li {
+  margin: 8px 0;
+}
+
+.link {
+  color: #fff;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.link:hover {
+  color: #ff9000;
+}
+
+.link.router-link-active {
+  color: #ff9000;
 }
 
 @media only screen and (max-width: 768px) {
