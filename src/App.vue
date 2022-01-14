@@ -10,7 +10,11 @@
       <Formulario @aoSalvarTarefa="salvarTarefa" />
       <div class="lista">
         <Tarefa v-for="(tarefa, key) in tarefas" :key="key" :tarefa="tarefa" />
-        <Box v-if="listaEstaVazia"> Você não está muito produtivo hoje :( </Box>
+        <Box v-if="listaEstaVazia">
+          <span class="mensagem-produtivo"
+            >Você não está muito produtivo hoje :(</span
+          >
+        </Box>
       </div>
     </div>
   </main>
@@ -58,17 +62,25 @@ export default defineComponent({
   padding: 1.25rem;
 }
 
+body {
+  background: #e5e5e5;
+}
+
 main {
-  --bg-primario: #fff;
+  --bg-primario: #e5e5e5;
   --texto-primario: #000;
 }
 
 main.modo-escuro {
-  --bg-primario: #2b2d42;
+  --bg-primario: #121214;
   --text-primario: #ddd;
 }
 
 .conteudo {
   background-color: var(--bg-primario);
+}
+
+.mensagem-produtivo {
+  color: #fff;
 }
 </style>

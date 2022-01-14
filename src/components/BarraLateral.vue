@@ -1,9 +1,7 @@
 <template>
   <header>
-    <h1>
-      <img src="../assets/logo.png" alt="alura-tracker" />
-      <button class="button" @click="alterarTema">{{ textoBotao }}</button>
-    </h1>
+    <img src="../assets/logo.png" alt="alura-tracker" />
+    <button class="button" @click="alterarTema">{{ textoBotao }}</button>
   </header>
 </template>
 
@@ -37,11 +35,27 @@ export default defineComponent({
 <style scoped>
 header {
   padding: 1rem;
-  background: #0d3b66;
+  background: #9871f5;
   width: 100%;
   height: 100vh;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
+header > img {
+  width: 50%;
+}
+
+button {
+  width: 100%;
+  padding: 2rem;
+  background: #04d361;
+}
+
 @media only screen and (max-width: 768px) {
   header {
     padding: 2.5rem;
