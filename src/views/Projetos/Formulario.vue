@@ -1,5 +1,5 @@
 <template>
-  <section class="projetos">
+  <section>
     <h1 class="title">Projetos</h1>
 
     <form @submit.prevent="salvar">
@@ -70,10 +70,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.projetos {
-  padding: 1.25rem;
-}
-
 .title {
   color: var(--text-primario);
 }
