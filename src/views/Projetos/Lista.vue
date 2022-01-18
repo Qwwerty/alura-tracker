@@ -7,7 +7,7 @@
       <span>Novo Projeto</span>
     </router-link>
 
-    <table class="table is-fullwidth">
+    <table class="table is-fullwidth mt-5">
       <thead>
         <tr>
           <th>ID</th>

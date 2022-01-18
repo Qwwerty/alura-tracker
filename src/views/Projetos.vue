@@ -13,8 +13,12 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
 .projetos {
   padding: 1.25rem;
+}
+
+.title {
+  color: var(--text-primario);
 }
 </style>
