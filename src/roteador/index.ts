@@ -8,7 +8,7 @@ const rotas: RouteRecordRaw[] = [
   { path: "/", name: "Tarefas", component: Tarefas },
   { path: "/projetos", name: "Projetos", component: Projetos },
   { path: "/projetos/novo", name: "Novo projeto", component: Formulario },
-  { path: "/projetos/:id", name: "Editar projeto", component: Formulario },
+  { path: "/projetos/:id", name: "Editar projeto", component: Formulario, props: true },
 ];
 
 const roteador = createRouter({
